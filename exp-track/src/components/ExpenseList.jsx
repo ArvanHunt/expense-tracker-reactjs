@@ -11,11 +11,11 @@ function ExpenseList({ expenses, deleteExpense }) {
           >
             <div>
               <p className="font-bold">{expense.name}</p>
-              <p className="text-gray-500">${expense.amount.toFixed(2)}</p>
+              <p className="text-gray-500">₹{expense.amount.toFixed(2)}</p>
             </div>
             <button
               onClick={() => deleteExpense(index)}
-              className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+              className="bg-green-900 text-white px-3 py-1 rounded hover:bg-green-700"
             >
               Delete
             </button>

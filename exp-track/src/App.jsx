@@ -44,12 +44,12 @@ function App() {
       <ExpenseForm addExpense={addExpense} />
       <ExpenseList expenses={expenses} deleteExpense={deleteExpense} />
       <div className="text-center mt-5 text-xl font-bold text-green-200">
-        Total Expense: ${totalExpense}
+        Total Expense: ₹{totalExpense}
       </div>
       <div className="flex justify-center mt-4">
   <button
     onClick={clearAllExpenses}
-    className="bg-red-600 text-white py-2 px-6 rounded hover:bg-red-700">
+    className="bg-green-950 text-white py-2 px-6 rounded hover:bg-green-700">
       Clear All Expenses
   </button>
   </div>
